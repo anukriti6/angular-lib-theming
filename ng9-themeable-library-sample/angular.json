@@ -28,6 +28,7 @@
               "projects/web-app/src/assets"
             ],
             "styles": [
+              "projects/web-app/src/theme.scss",
               "projects/web-app/src/styles.scss"
             ],
             "scripts": []
