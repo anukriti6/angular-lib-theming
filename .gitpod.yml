@@ -1,0 +1,3 @@
+tasks:
+  - init: npm install -g --silent @angular/cli
+    command: 'echo "TODO: Replace with command to start project"'
