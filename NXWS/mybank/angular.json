@@ -21,9 +21,17 @@
             "polyfills": "apps/appone/src/polyfills.ts",
             "tsConfig": "apps/appone/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/appone/src/favicon.ico", "apps/appone/src/assets"],
-            "styles": ["apps/appone/src/styles.scss"],
-            "scripts": []
+            "assets": [
+              "apps/appone/src/favicon.ico",
+              "apps/appone/src/assets"
+            ],
+            "styles": [
+              "apps/appone/src/styles.scss"
+            ],
+            "scripts": [],
+          "stylePreprocessorOptions": {
+                    "includePaths": [ "libs/ui/src/lib/styles" ]
+                }
           },
           "configurations": {
             "production": {
@@ -54,7 +62,10 @@
                 }
               ]
             }
-          }
+          },
+          "stylePreprocessorOptions": {
+                    "includePaths": [ "libs/ui/src/lib/styles" ]
+                }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
@@ -81,7 +92,10 @@
               "apps/appone/tsconfig.spec.json",
               "apps/appone/tsconfig.editor.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/appone/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/appone/**/*"
+            ]
           }
         },
         "test": {
@@ -114,8 +128,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/appone-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/appone-e2e/**/*"]
+            "tsConfig": [
+              "apps/appone-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/appone-e2e/**/*"
+            ]
           }
         }
       }
@@ -145,7 +164,10 @@
               "libs/ui/tsconfig.lib.json",
               "libs/ui/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/ui/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/ui/**/*"
+            ]
           }
         },
         "test": {
@@ -164,7 +186,8 @@
     }
   },
   "cli": {
-    "defaultCollection": "@nrwl/angular"
+    "defaultCollection": "@nrwl/angular",
+    "analytics": false
   },
   "schematics": {
     "@nrwl/workspace": {
