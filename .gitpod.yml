@@ -1,3 +1,3 @@
 tasks:
   - init: npm install -g nx && npm install -g --silent @angular/cli
-    command: 'cd /workspace/angular-lib-theming/NXWS/mybank && npm instally'
+    command: 'cd /workspace/angular-lib-theming/NXWS/mybank && npm install'
