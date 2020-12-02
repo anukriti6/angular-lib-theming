@@ -29,6 +29,9 @@
     "appone-e2e": {
       "tags": [],
       "implicitDependencies": ["appone"]
+    },
+    "ui": {
+      "tags": []
     }
   }
 }
