@@ -1,0 +1,7 @@
+@import '@mybank/styles/theme.scss';
+@import '@mybank/styles/variables.scss';
+
+.test{
+  background-color:$base-color;
+  width: 300px;
+}
